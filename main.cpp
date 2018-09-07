@@ -33,7 +33,7 @@ struct Float {
        typedef float T;
        typedef Greater<T> Operation;
 };
-
+/*
 
 int main(int argc, char const *argv[]) {
     testSimpleLinkedList();
@@ -90,7 +90,7 @@ void testDoubleLinkedList() {
     cout << *ite << " ";
     cout << endl << endl;
 }
-
+*/
 int main()
 {
     SList<Integer> slist;
@@ -113,12 +113,12 @@ int main()
     slist.remove(3);
     slist.remove(5);
 
-     ite1=slist.begin();
+     SList<Integer>::iterator ite3=slist.begin();
 
-    for (ite1 = slist.begin(); ite1 != slist.end(); ++ite1) {
-        cout << *ite1 << " ";
+    for (ite3 = slist.begin(); ite3 != slist.end(); ++ite3) {
+        cout << *ite3 << " ";
     }
-    cout << *ite1 << " ";
+    cout << *ite3 << " ";
     cout <<endl;
 
 

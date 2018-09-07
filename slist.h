@@ -134,15 +134,7 @@ class SList {
 
         }
 
-        void dato()
-        {
-            cout<< head->data<<endl;
-            cout<< head->next->data<<endl;
-            cout<< head->next->next->data<<endl;
-            cout<< head->next->next->next->data<<endl;
-            cout<< head->next->next->next->next->data<<endl;
 
-        }
 
         ~SList() {
             if (head) {
