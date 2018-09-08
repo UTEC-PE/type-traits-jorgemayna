@@ -11,7 +11,7 @@ class SListIterator : public Iterator<T> {
         SListIterator(Node<T> *current) : Iterator<T>(current) {};
         SListIterator<T> operator++(){
 
-            Iterator<T>::current=Iterator<T>::current->next;
+            this->current=this->current->next;
             return *this;
         };
 };
@@ -127,7 +127,7 @@ class SList {
                 temp=temp->next;
             }
 
-            SListIterator<T> temp1(temp);
+            SListIterator<T> temp1(temp->next);
 
 
             return temp1;

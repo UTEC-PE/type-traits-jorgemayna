@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "slist.h"
-//#include "dlist.h"
+#include "dlist.h"
 
 using namespace std;
 
@@ -33,7 +33,7 @@ struct Float {
        typedef float T;
        typedef Greater<T> Operation;
 };
-/*
+
 
 int main(int argc, char const *argv[]) {
     testSimpleLinkedList();
@@ -90,53 +90,5 @@ void testDoubleLinkedList() {
     cout << *ite << " ";
     cout << endl << endl;
 }
-*/
-int main()
-{
-    SList<Integer> slist;
-    slist.insert(6);
-    slist.insert(5);
-    slist.insert(3);
-    slist.insert(4);
-    slist.insert(2);
-
-    SList<Integer>::iterator ite1=slist.begin();
 
 
-
-   for (ite1 = slist.begin(); ite1 != slist.end(); ++ite1) {
-        cout << *ite1 << " ";
-    }
-    cout << *ite1 << " ";
-    cout <<endl;
-
-    slist.remove(3);
-    slist.remove(5);
-
-     SList<Integer>::iterator ite3=slist.begin();
-
-    for (ite3 = slist.begin(); ite3 != slist.end(); ++ite3) {
-        cout << *ite3 << " ";
-    }
-    cout << *ite3 << " ";
-    cout <<endl;
-
-
-
-    SList<Float> slist1;
-
-    slist1.insert(6);
-    slist1.insert(5);
-    slist1.insert(3);
-    slist1.insert(4);
-    slist1.insert(2);
-
-    SList<Float>::iterator ite2= slist1.begin();
-    for (ite2 = slist1.begin(); ite2 != slist1.end(); ++ite2) {
-        cout << *ite2 << " ";
-    }
-    cout << *ite2 << " ";
-    cout <<endl;
-
-    return 0;
-}

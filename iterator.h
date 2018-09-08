@@ -23,10 +23,9 @@ template<typename T> Iterator<T> Iterator<T>::operator=(Iterator<T> other)
 {
     //sobrecargar de igual
 
-    Iterator<T> temp;
-    temp.current=other.current;
+    current=other.current;
 
-    return temp;
+    return *this;
 }
 
 
