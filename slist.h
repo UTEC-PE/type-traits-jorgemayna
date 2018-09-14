@@ -74,7 +74,7 @@ class SList {
 
         }
 
-        bool insert(T data) {
+        bool insert(T data) { // No estás retornando nada, el return debería ser un boolean
             // TODO
             Node<T>** ggbk;
 
@@ -83,7 +83,7 @@ class SList {
             {
 
                 Node<T>* temp=(*ggbk);
-                *ggbk=new Node<T>(data);
+                *ggbk=new Node<T>(data); 
                 (*ggbk)->next=temp;
 
             }else{
@@ -95,7 +95,7 @@ class SList {
 
         }
 
-        bool remove(T item) {
+        bool remove(T item) { // No estás retornando nada, el return debería ser un boolean
             // TODO
             Node<T>** mario;
             if(find(item,mario))
@@ -127,7 +127,7 @@ class SList {
                 temp=temp->next;
             }
 
-            SListIterator<T> temp1(temp->next);
+            SListIterator<T> temp1(temp->next); // Podrías retornar directamente un iterador a nullptr
 
 
             return temp1;
